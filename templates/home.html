@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+
+<div class="topbar">
+
+    <h1>Watch Store</h1>
+
+    <form method="GET" action="/home">
+        <input type="text" name="search" placeholder="Search Watch">
+        <button type="submit">Search</button>
+    </form>
+
+    <div>
+        <a href="/cart">Cart</a> |
+        <a href="/logout">Logout</a>
+    </div>
+
+</div>
+
+<hr>
+
+<!-- PRODUCTS -->
+<div class="products">
+
+    {% for p in products %}
+
+    <div class="card">
+
+        <img src="{{ url_for('static', filename='images/' + p.image) }}">
+     
+        
+        <h3>{{ p.name }}</h3>
+
+        <p>₹{{ p.price }}</p>
+
+        <a href="/add_cart/{{ p.id }}">
+            <button>Add to Cart</button>
+        </a>
+
+    </div>
+
+    {% endfor %}
+
+</div>
+
+</body>
+</html>

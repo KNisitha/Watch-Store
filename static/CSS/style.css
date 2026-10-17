@@ -1,0 +1,90 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial;
+    background:url("/static/images/realme.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    min-height:100vh;
+}
+  
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:rgba(255,255,255,0.8);
+}
+.login-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.topbar form{
+    display:flex;
+    gap:10px;
+}
+
+.topbar a{
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+.login-box{
+    width:400px;
+    background:rgba(255,255,255,0.9);
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+}
+
+input{
+    width:90%;
+    padding:10px;
+    margin:10px;
+}
+
+button{
+    background:#2196F3;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+.products{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    width:250px;
+    background:white;
+    margin:15px;
+    padding:15px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.card img{
+    width:200px;
+    height:200px;
+}
+
+.cart-item{
+    background:rgb(255, 255, 255);
+    margin:20px;
+    padding:15px;
+    text-align:center;
+}
+
+.cart-item img{
+    width:150px;
+    height:150px;
+}
